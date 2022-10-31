@@ -8,6 +8,8 @@ The problem solved by the builder pattern is easy to identify. This pattern shou
 	 the same class with different characteristics are needed.
 **/
 
+
+
 HouseBuilder hb = new HouseBuilder();
 House house1 = hb
 	.BasicFeatureBuilder
@@ -15,7 +17,7 @@ House house1 = hb
 		.SetFloors(1)
 		.SetRooms(2)
 	.OptionalFeatureBuilder
-		.SetSauna(false)
+		.SetPool(false)
 		.SetBasement(false)
 		.SetSauna(false);
  Console.WriteLine(house1);
@@ -29,6 +31,7 @@ House house2 = hb
 	.OptionalFeatureBuilder
 		.SetSauna(true)
 		.SetBasement(true)
+		.SetPool(true)
 		.SetSauna(true);
 Console.WriteLine(house2);
 
@@ -43,17 +46,21 @@ public class House{
 	public bool Pool { get; set; }
 	public bool Sauna { get; set; }
 	public bool Basement { get; set; }
+	public bool Gym { get; set; }
 
 	public override string ToString()
 	{
 		return $"Name: {Name}  - Color: {Color}   -Rooms:{Rooms}  -Floors:{Floors} " + Environment.NewLine +
 		$" Features: " + Environment.NewLine +
-		$" *Pool: {Pool}   *Sauna: {Sauna}  *Basement {Basement} ";
+		$" *Pool: {Pool}   *Sauna: {Sauna}  *Basement {Basement}  *Gym {Gym} ";
 	}
 
 }
-public class HouseBuilder{
+
+public class HouseBuilder{   //the constructor is a separate component whose sole purpose in life is to build an object.
 		protected House house = new House();
+
+		//You can now give the constructor a constructor there by allowing it to exist as a separate standalone component that someone else
 		public HouseBasicFeatureBuilder BasicFeatureBuilder => new HouseBasicFeatureBuilder(house);
 		public HouseOptionalFeatureBuilder OptionalFeatureBuilder => new HouseOptionalFeatureBuilder(house);
 
@@ -64,7 +71,7 @@ public class HouseBuilder{
 	}
 
 	#region BasicFeature
-	public class HouseBasicFeatureBuilder : HouseBuilder{
+	public class HouseBasicFeatureBuilder : HouseBuilder{  
 		public HouseBasicFeatureBuilder(House house)
 		{
 		 this.house = house;
@@ -78,7 +85,7 @@ public class HouseBuilder{
 		public HouseBasicFeatureBuilder SetColor(string color)
 		{
 			house.Color = color;
-			return this;
+			return this;  //to make a builder fluid just return this
 		}
 		public HouseBasicFeatureBuilder SetRooms(int rooms)
 		{
@@ -120,9 +127,16 @@ public class HouseBuilder{
 			return this;
 		}
 
+		public HouseOptionalFeatureBuilder SetGym(bool gym)
+		{
+		house.Gym = gym;
+		return this;
+		}
 
 
-	}
+
+
+}
 #endregion
 
 
