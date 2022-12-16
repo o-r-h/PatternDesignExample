@@ -9,7 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryPattern", "FactoryPa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdapterPattern", "AdapterPattern\AdapterPattern.csproj", "{E39E66AC-B67A-4F67-8114-134512E79EB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BridgePattern", "BridgePattern\BridgePattern.csproj", "{C3B967F0-ABD2-4E0B-9EBE-0F562018D947}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BridgePattern", "BridgePattern\BridgePattern.csproj", "{C3B967F0-ABD2-4E0B-9EBE-0F562018D947}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompositePattern", "CompositePattern\CompositePattern.csproj", "{E8362F8F-58FA-4A21-84E5-9BCA92E7E37B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecoratorPattern", "DecoratorPattern\DecoratorPattern.csproj", "{0051A231-A322-4576-8BD7-84069C70967C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryPatternFileHandler", "FactoryPatternFileHandler\FactoryPatternFileHandler.csproj", "{789DD639-15B9-4203-8657-78AB2645D47C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +39,18 @@ Global
 		{C3B967F0-ABD2-4E0B-9EBE-0F562018D947}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3B967F0-ABD2-4E0B-9EBE-0F562018D947}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3B967F0-ABD2-4E0B-9EBE-0F562018D947}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8362F8F-58FA-4A21-84E5-9BCA92E7E37B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8362F8F-58FA-4A21-84E5-9BCA92E7E37B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8362F8F-58FA-4A21-84E5-9BCA92E7E37B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8362F8F-58FA-4A21-84E5-9BCA92E7E37B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0051A231-A322-4576-8BD7-84069C70967C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0051A231-A322-4576-8BD7-84069C70967C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0051A231-A322-4576-8BD7-84069C70967C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0051A231-A322-4576-8BD7-84069C70967C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{789DD639-15B9-4203-8657-78AB2645D47C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{789DD639-15B9-4203-8657-78AB2645D47C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{789DD639-15B9-4203-8657-78AB2645D47C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{789DD639-15B9-4203-8657-78AB2645D47C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
