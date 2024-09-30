@@ -18,4 +18,7 @@ samsungRemoteControl.SwitchOn();
 samsungRemoteControl.SetChannel(202);
 samsungRemoteControl.SwitchOff();
 
+
+
+
 Console.ReadKey();

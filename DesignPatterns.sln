@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.2.32630.192
+VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuilderPattern", "ConsoleApp1\BuilderPattern.csproj", "{1C21FBBE-BF56-43CD-8F8B-3D78923F525A}"
 EndProject
@@ -15,7 +15,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompositePattern", "Composi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecoratorPattern", "DecoratorPattern\DecoratorPattern.csproj", "{0051A231-A322-4576-8BD7-84069C70967C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryPatternFileHandler", "FactoryPatternFileHandler\FactoryPatternFileHandler.csproj", "{789DD639-15B9-4203-8657-78AB2645D47C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryPatternFileHandler", "FactoryPatternFileHandler\FactoryPatternFileHandler.csproj", "{789DD639-15B9-4203-8657-78AB2645D47C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProxyPattern", "ProxyPattern\ProxyPattern.csproj", "{757F2128-29F5-4494-A51F-C28A70E66071}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommandPattern", "CommandPattern\CommandPattern.csproj", "{32B8DACD-6B3E-4A5C-AC73-A2FB646180E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatorPattern", "MediatorPattern\MediatorPattern.csproj", "{C3612CD7-2287-442F-8ED1-634CD74D2454}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatorPatternCrud", "MediatorPatternCrud\MediatorPatternCrud.csproj", "{60AFF299-5C4C-4001-A967-3BF68714D546}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +59,22 @@ Global
 		{789DD639-15B9-4203-8657-78AB2645D47C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{789DD639-15B9-4203-8657-78AB2645D47C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{789DD639-15B9-4203-8657-78AB2645D47C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{757F2128-29F5-4494-A51F-C28A70E66071}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{757F2128-29F5-4494-A51F-C28A70E66071}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{757F2128-29F5-4494-A51F-C28A70E66071}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{757F2128-29F5-4494-A51F-C28A70E66071}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32B8DACD-6B3E-4A5C-AC73-A2FB646180E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32B8DACD-6B3E-4A5C-AC73-A2FB646180E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32B8DACD-6B3E-4A5C-AC73-A2FB646180E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32B8DACD-6B3E-4A5C-AC73-A2FB646180E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3612CD7-2287-442F-8ED1-634CD74D2454}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3612CD7-2287-442F-8ED1-634CD74D2454}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3612CD7-2287-442F-8ED1-634CD74D2454}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3612CD7-2287-442F-8ED1-634CD74D2454}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60AFF299-5C4C-4001-A967-3BF68714D546}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60AFF299-5C4C-4001-A967-3BF68714D546}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60AFF299-5C4C-4001-A967-3BF68714D546}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60AFF299-5C4C-4001-A967-3BF68714D546}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
